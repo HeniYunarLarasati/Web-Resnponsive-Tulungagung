@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulungagung</title>
+    <link rel="icon" href="logota.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <style media="screen">
+      *{
+        box-sizing: border-box;
+      }
+      [class*="col-"]{
+        padding: 15px; float: left;
+      }
+      [class*="col-"]{
+        width: 100%;
+      }
+      @media only screen and (min-width: 600px){
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+        .header{
+          height: 200px;
+        }
+      }
+      @media only screen and (min-width: 768px){
+        /*untuk dekstop*/
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        .header{
+          height: 200px;
+      }
+    }
+      .header{
+        background: url("tulung agung.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        float: center;
+        height: auto;
+      }
+      .header .logo{
+        text-align: center;
+      }
+      .header .logo img{
+        width: 100px;
+        height: auto;
+      }
+      .header .judul h1{
+        text-align: center;
+        top: 100px;
+        left: 465px;
+        font-weight: bolder;
+        color: #f4d253;
+        font-family: "Calibri";
+        font-size: 50px;
+        position: absolute;
+        font-weight: 100;
+      }
+
+      .container{
+        width: 80%;
+        margin: 0 auto;
+      }
+      .menu{
+        background: #f4d253;
+        height: auto;
+        top: 0;
+        left: 0;
+      }
+      .menu ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu ul li{
+        float: right;
+        text-align: center;
+        color: black;
+
+      }
+      .menu ul li a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 15px;
+      }
+      div.menu a:hover{
+        color: WHITE;
+      }
+      .content{ text-align: justify;}
+      }
+      div.profil{
+        height: auto;
+        padding: 0;
+        margin-top: 20px;
+        float: left;
+
+      }
+      div.profil .kanan{
+        height: auto;
+        float: left;
+        padding-right: 50px;
+      }
+      div.profil .kanan h1{
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        border-bottom: 3px solid #f4d253;
+        padding-bottom: 10px;
+
+      }
+      div.profil .kanan p{
+        text-align: right;
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        color: grey;
+        float: left;
+      }
+      div.profil .kiri{
+        float: left;
+      }
+      div.profil .kiri img{
+        width: 175px;
+        height: 230px;
+        float: left;
+        margin-top: 60px;
+        margin-left: 200px;
+      }
+      .image{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+
+      .content{
+        width: 100%;
+        margin: 0 auto;
+      }
+      .content h3{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        border-bottom: 3px solid #f4d253;
+        border-top: 3px solid #f4d253;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        background: #f4d253;
+      }
+      .box{
+        text-align: center;
+        font-family: "calibri";
+        font-weight: lighter;
+        color: black;
+      }
+      .box a{
+        text-decoration: none;
+        color: black;
+      }
+      .box a:hover{
+        color: lightblue;
+      }
+      .pariwisata h3{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        border-bottom: 3px solid #f4d253;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        background: #f4d253;
+      }
+      .pariwisata .Budaya h2{
+        width: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        border-bottom: 3px solid grey;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        background: grey;
+      }
+      .pariwisata .Budaya img{
+        width: 240px;
+        height: 200px;
+        border-radius: 10%;
+        margin: 0 auto;
+        border: 10px double darkgrey;
+      }
+      .pariwisata{
+        width: 100%;
+        margin: 0 auto;
+      }
+      .isi{
+        text-align: center;
+        font-family: "calibri";
+        font-weight: lighter;
+      }
+      .pariwisata .kuliner h2{
+        width: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        border-bottom: 3px solid #c4bb85;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        background: #c4bb85;
+      }
+      .pariwisata .kuliner img{
+        width: 240px;
+        height: 200px;
+        border-radius: 10%;
+        margin: 0 auto;
+        border: 10px double #f4d253;
+      }
+
+      .text-grey{color: grey;}
+      .text-yellow{color: yellow;}
+      .text-brown{color:brown;}
+      .footer{
+        background: grey;
+        color: #fff;
+        text-align: right;
+        margin-right: 50px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 13px;
+    }
+    .pariwisata .alam h2{
+      width: 50%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 25px;
+      font-family: sans-serif;
+      font-weight: lighter;
+      border-bottom: 3px solid LIGHTBLUE;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      background: lightblue;
+    }
+    .pariwisata .alam img{
+      width: 240px;
+      height: 200px;
+      border-radius: 10%;
+      margin: 0 auto;
+      border: 10px double lightblue;
+    }
+    .informasi{
+      height: auto;
+      background: lightgrey;
+    }
+    .informasi h3{
+      padding-top: 0;
+      text-align: center;
+      font-size: 30px;
+      border-bottom: black;
+      font-family: sans-serif;
+      font-weight: lighter;
+    }
+    .informasi p{
+      text-align: center;
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: lighter;
+    }
+    .informasi .bunder{
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border-radius: 50%;
+      margin: 20px;
+      display: flex;
+      float: right;
+      margin-right: 10px;
+      margin-left: 100px;
+      right: 50px;
+    }
+    .informasi .bunder span{
+      font-size: 35px;
+      color: black;
+      margin: auto;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="col-12 col-s-12 header">
+        <div class="logo col-4">
+          <img src="logota.png">
+        </div>
+        <div class="judul col-8">
+          <h1>Tulungagung Bersinar</h1>
+        </div>
+      </div>
+
+      <div class="col-12 menu">
+        <ul>
+          <li class="col-3"> <a href="#">Profil</a> </li>
+          <li class="col-3"> <a href="#">Berita</a> </li>
+          <li class="col-3"> <a href="#">Pariwisata</a> </li>
+          <li class="col-3"> <a href="#">Informasi</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-12 profil">
+        <div class="kanan col-6">
+          <h1>KABUPATEN <span class="text-yellow">TULUNGAGUNG</span></h1>
+          <p>Kabupaten Tulungaung merupakan salah satu kabupaten di provinsi jawa timur
+          yang memiliki 19 kecamatan, 14 kelurahan dan 257 desa. Kabupaten Tulungaung
+        terletak di bagian selatan Jawa Timur yang dekat dengan pesisir.</p>
+        </div>
+        <div class="kiri col-6">
+          <img src="logota.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-12 col-s-12 content">
+        <h3>BERITA</h3>
+        <div class="box col-3 col-s-6">
+          <img src="1.png" class="image">
+          <h2> <a href="#">Program Pembantuan</a></h2>
+          <p>Peninjauan dan penyerahan bantuan kepada korban angin puting beliung</p>
+        </div>
+        <div class="box col-3 col-s-6">
+          <img src="2.png" class="image">
+          <h2><a href="#">Kesehatan</a></h2>
+          <p>Upaya penanggulangan TBC di Kabupaten Tulungagung</p>
+        </div>
+        <div class="box col-3 col-s-6">
+          <img src="3.png" class="image">
+          <h2><a href="#">Hiburan</a></h2>
+          <p>Nonton bareng debat presiden pertama di tahun 2019</p>
+        </div>
+        <div class="box col-3 col-s-6">
+          <img src="4.png" class="image">
+          <h2><a href="#">Lingkungan</a></h2>
+          <p>Penganugerahan penghargaan adipura Kabupaten Tulungagung</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-s-12 pariwisata">
+        <h3>PARIWISATA</h3>
+
+
+        <div class="col-12 col-s-12 Budaya">
+          <h2>WISATA <span class="text-yellow">BUDAYA</span></h2>
+          <div class="isi col-4 col-s 12">
+            <img src="TIBAN.jpg" alt="">
+            <h1>Tari Tiban</h1>
+            <p class="text-grey">Tari Tiban merupakan salah satubudaya khas Tulungagung yang
+            ditampilkan untuk pemanggilan hujan, biasnya dilakukan pada musim
+          kemarau panjang nan kering.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="temantenkucing.jpg" alt="">
+            <h1>Temanten Kucing</h1>
+            <p class="text-grey">Temanten Kucing merupakan sebuah upacara adat di daerah Tulungagung
+            bagian Besuki khusunya di telaga buret. Ritual ini dilakukan pada
+          musim kemarau untuk memanggil hujan</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="reogkendang.jpg" alt="">
+            <h1>Reog Kendang</h1>
+            <p class="text-grey">Reog Kendang biasa di tampilkan pada pembukaan acara seperti
+            perpisahan sekolah maupun acara formal. Reog biasa ditampilkan secara grup
+          Kesenian ini dapat dengan mudah ditemukan di Tulungagung</p>
+          </div>
+          <br>
+          <div class="isi col-4 col-s 12">
+            <img src="langenbeksan.jpg" alt="">
+            <h1>Langen Beksan</h1>
+            <p class="text-grey">Langen Beksan merupakan tarian yang sering ditampilkan pada perayaan budaya. Tarian ini biasanya diiringi lagu lagu tradisional.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="jedor.jpg" alt="">
+            <h1>Jedor</h1>
+            <p class="text-grey">Jedor biasa ditampilkan di acara acara keagaman. Lagu yang ditampilkan berisi lagu islami yang penuh dengan makna kehidupan.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="rigitpurwo.jpg" alt="">
+            <h1>Wayang Ringgit Purwo</h1>
+            <p class="text-grey">Wayang ini sering ditampilkan di acara acara besar. Wayang satu ini biasa dimainkan oleh ki dalang Eko Prisdianto.</p>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-s-12 kuliner">
+          <h2>WISATA <span class="text-yellow">KULINER</span></h2>
+          <div class="isi col-4 col-s 12">
+            <img src="geti.jpg" alt="">
+            <h1>Geti</h1>
+            <p class="text-grey">Geti merupakan makanan ringan dalam bentuk
+             nugget yang berbahan dasar kacang, wijen, dan karamel. Rasanya manis
+            dan gurih.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="rambak.jpg" alt="">
+            <h1>Rambak</h1>
+            <p class="text-grey">Rambak merupakan kerupuk yang terbuat dari kulit
+             sapi yang di goreng. Rasanya gurih dan lembut. Sangat cocok untuk
+            teman makan.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="lodho.jpg" alt="">
+            <h1>Lodho</h1>
+            <p class="text-grey">Lodho yaitu makanan khas Tulungagung yang
+             berbahan dasar ayam dan santan. Lodho Tulungaung agak berbeda dengan
+            lodho dikota lainnya. Rasanya lebih pedas dan manis. </p>
+          </div>
+          <br>
+          <div class="isi col-4 col-s 12">
+            <img src="cenil.jpg" alt="">
+            <h1>Cenil</h1>
+            <p class="text-grey">Geti merupakan makanan ringan dalam bentuk
+             nugget yang berbahan dasar kacang, wijen, dan karamel. Rasanya manis
+            dan gurih.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="gadung.jpg" alt="">
+            <h1>Kerpuk Gadung</h1>
+            <p class="text-grey">Rambak merupakan kerupuk yang terbuat dari kulit
+             sapi yang di goreng. Rasanya gurih dan lembut. Sangat cocok untuk
+            teman makan.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="sompil.jpg" alt="">
+            <h1>Sompil</h1>
+            <p class="text-grey">Lodho yaitu makanan khas Tulungagung yang
+             berbahan dasar ayam dan santan. Lodho Tulungaung agak berbeda dengan
+            lodho dikota lainnya. Rasanya lebih pedas dan manis. </p>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-s-12 alam">
+          <h2>WISATA <span class="text-yellow">ALAM</span></h2>
+          <div class="isi col-4 col-s 12">
+            <img src="wonorejo.jpg" alt="">
+            <h1>Waduk Wonorejo</h1>
+            <p class="text-grey">Waduk Wonorejo banyak diincar oleh wisatawan lokal
+             maupun asing untuk memancing atau pun hanya melihat pemandangan danau luas yang indah.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="sine.jpg" alt="">
+            <h1>Pantai Sine</h1>
+            <p class="text-grey">Pantai Sine memiliki bibir pantai yang cukup panjang. Dan senja di pantai disini sangat indah untuk berburu
+             sinar senja. Di pantai ini juga terdapat tempat pelelangan ikan segar langsung dari laut.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="ranugumbolo.jpg" alt="">
+            <h1>Ranu Gumbolo</h1>
+            <p class="text-grey">Ranu Gumbolo di Tulungagung ini berdekatan dengan waduk Wonorejo
+            . Berada di dalam hutan pinus yang rindang membuat tempatini tempat yang cocok untuk piknik bersama keluarga.</p>
+          </div>
+          <br>
+          <div class="isi col-4 col-s 12">
+            <img src="coro.jpg" alt="">
+            <h1>Pantai Coro</h1>
+            <p class="text-grey">Pantai Coro merupakan satu dari pantai di Tulungaung yang
+             memliki pasir yang putih nan bersih. Posisi pantainya menjorok kedarat, jadi ombak yang
+            datang tidak terlalu besar.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="patunggebang.jpg" alt="">
+            <h1>Pantai Patung Gebang</h1>
+            <p class="text-grey">Jalan yang harus dilewati untuk menemukan pantai
+             yang indah ini tidak terbilang mudah, namun jalan yang dilalui akan sepadan
+            degan keindahan yang akan anda lihat.</p>
+          </div>
+          <div class="isi col-4 col-s 12">
+            <img src="gunungbudheg.jpg" alt="">
+            <h1>Gunung Budheg</h1>
+            <p class="text-grey">Gunung Budheg merupakan salah satu gunung yang berada
+            di Tulungagung yang tidak terlalu tiggi, jadi tempat ini cocok untuk pendaki
+           pemula.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="informasi col-12 col-s-12">
+        <h3>Informasi</h3>
+        <p>Untuk informasi lebih lanjut</p>
+        <div class="bunder">
+          <span class="fab fa-facebook-f"></span>
+        </div>
+        <div class="bunder">
+          <span class="fab fa-instagram"></span>
+        </div>
+        <div class="bunder">
+          <span class="fab fa-twitter"></span>
+        </div>
+      </div>
+
+
+      <div class="col-12 footer">
+        Made with love by Heni
+      </div>
+    </div>
+  </body>
+</html>
